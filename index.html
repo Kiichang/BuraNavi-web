@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BuraNavi - Google Mapsの目的地をWear OSへ</title>
+  <meta name="description" content="BuraNaviは、Google Mapsで選んだ目的地をWear OSウォッチへ送り、方向と距離をシンプルに確認できるナビゲーションアプリです。">
+  <meta name="theme-color" content="#43B8AA">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="BuraNavi - Google Mapsの目的地をWear OSへ">
+  <meta property="og:description" content="Google Mapsで選んだ目的地を手首へ。方向と距離をシンプルに確認できます。">
+  <meta property="og:image" content="" data-config-meta="ogImageUrl">
+  <meta property="og:url" content="" data-config-meta="canonicalUrl">
+  <link rel="canonical" data-config-link="canonicalUrl">
+  <link rel="icon" type="image/png" href="assets/icons/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/config.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">本文へ移動</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="BuraNavi トップへ">
+        <img src="assets/icons/favicon.png" width="40" height="40" alt="">
+        <span>BuraNavi</span>
+      </a>
+      <nav aria-label="メインナビゲーション">
+        <a href="#features">できること</a>
+        <a href="#how-to">使い方</a>
+        <a href="#download">ダウンロード</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-stage">
+        <div class="hero-copy">
+          <p class="eyebrow"><span aria-hidden="true">●</span> ぶらぶら歩ける、シンプルナビ</p>
+          <h1 id="hero-title">目的地は手首に。<span>景色を楽しもう。</span></h1>
+          <p class="hero-lead">行きたい場所まで、方向と距離だけ。<br>寄り道しながらのんびり歩きたい人のためのシンプルなナビです。</p>
+          <div class="hero-points" aria-label="BuraNaviの特徴">
+            <span><b aria-hidden="true">↗</b> 方向がひと目でわかる</span>
+            <span><b aria-hidden="true">⌖</b> 距離を手首で確認</span>
+          </div>
+          <div class="hero-actions" aria-label="アプリのダウンロード">
+            <a class="button button-primary is-disabled" href="#download" aria-disabled="true" data-download="mobile">
+              <span class="button-kicker">Androidスマートフォン</span>
+              スマホ版をダウンロード
+            </a>
+            <a class="button button-secondary is-disabled" href="#download" aria-disabled="true" data-download="wear">
+              <span class="button-kicker">Wear OSウォッチ</span>
+              Wear OS版をダウンロード
+            </a>
+          </div>
+          <p class="download-status" data-download-status role="status">スマホ版・Wear OS版をダウンロードできます。</p>
+          <p class="brand-note">Google Mapsの共有機能を利用します。Googleによる公式提供・提携アプリではありません。</p>
+        </div>
+
+        <figure class="hero-visual">
+          <picture>
+            <source media="(max-width: 920px)" srcset="assets/images/hero-walk-navigation-mobile.webp">
+            <img src="assets/images/hero-walk-navigation.webp" width="1774" height="887" alt="BuraNaviの実際のナビ画面を表示したWear OSウォッチと、川沿いを歩きながら手首を見る人のイラスト">
+          </picture>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" id="features" aria-labelledby="features-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">What you can do</p>
+          <h2 id="features-title">ぶらぶら歩ける、シンプルナビ。</h2>
+          <p>目的地検索は使い慣れたGoogle Mapsに任せて、移動中はウォッチの矢印と距離を確認するだけ。</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card feature-card-mint">
+            <span class="feature-number" aria-hidden="true">1</span>
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 19h14"/></svg>
+            </span>
+            <h3>Google Mapsから共有</h3>
+            <p>目的地を選んだら、共有先からBuraNaviを選択。アプリ内で検索し直す必要はありません。</p>
+          </article>
+          <article class="feature-card feature-card-yellow">
+            <span class="feature-number" aria-hidden="true">2</span>
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="m15.8 8.2-2.2 5.4-5.4 2.2 2.2-5.4 5.4-2.2Z"/></svg>
+            </span>
+            <h3>方向と距離を表示</h3>
+            <p>Wear OSウォッチに目的地の方向と距離を表示。ひと目で進む方向を確認できます。</p>
+          </article>
+          <article class="feature-card feature-card-blue">
+            <span class="feature-number" aria-hidden="true">3</span>
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="7" y="3" width="10" height="18" rx="3"/><path d="M9 7h6M9 17h6"/></svg>
+            </span>
+            <h3>スマホを取り出さず確認</h3>
+            <p>歩きながら何度もスマートフォンを開かず、手首で移動方向を確認できます。</p>
+          </article>
+        </div>
+        <aside class="walk-callout" aria-label="BuraNaviの楽しみ方">
+          <img src="assets/images/walker-watch.webp" width="775" height="1200" loading="lazy" alt="PCヒーローと同じ服装で、手首のウォッチを確かめながら歩く女性のイラスト">
+          <div>
+            <p class="section-label">Take a little detour</p>
+            <h3>最短ルートにこだわらず、気になる景色へ。</h3>
+            <p>スマホを何度も開かず、手首で方向を確かめながら、自分のペースで歩けます。</p>
+          </div>
+          <div class="callout-footprints" aria-hidden="true"><span>●</span><span>●</span><span>●</span></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section-tint" id="how-to" aria-labelledby="how-to-title">
+      <img class="section-watch section-watch-pink" src="assets/images/watch-pink-decor.webp" width="650" height="648" loading="lazy" alt="" aria-hidden="true">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">How it works</p>
+          <h2 id="how-to-title">使い方は、4ステップ</h2>
+          <p>スマートフォンとWear OSウォッチの両方にBuraNaviをインストールしてから操作します。</p>
+        </div>
+
+        <ol class="steps">
+          <li>
+            <span class="step-number">1</span>
+            <span class="step-illustration" aria-hidden="true">
+              <svg viewBox="0 0 120 92"><path class="illust-ground" d="M7 78c22-15 43-12 56-1 17 14 32 6 50-2v17H7Z"/><rect class="illust-paper" x="36" y="7" width="48" height="76" rx="11"/><path class="illust-line" d="M45 62c12-18 18-12 28-30"/><path class="illust-pin" d="M69 25a8 8 0 0 1 8 8c0 6-8 14-8 14s-8-8-8-14a8 8 0 0 1 8-8Z"/><circle class="illust-paper" cx="69" cy="33" r="2.6"/></svg>
+            </span>
+            <strong>目的地を選ぶ</strong><span>Google Mapsで行きたい場所を開きます。</span>
+          </li>
+          <li>
+            <span class="step-number">2</span>
+            <span class="step-illustration" aria-hidden="true">
+              <svg viewBox="0 0 120 92"><path class="illust-ground" d="M3 80c17-12 33-12 48-2 20 13 39 9 66-5v19H3Z"/><rect class="illust-paper" x="10" y="20" width="42" height="55" rx="9"/><circle class="illust-pin" cx="31" cy="40" r="8"/><rect class="illust-paper" x="77" y="27" width="34" height="42" rx="10"/><path class="illust-line" d="M47 47h35m-8-8 8 8-8 8"/></svg>
+            </span>
+            <strong>共有する</strong><span>「共有」からBuraNaviを選びます。</span>
+          </li>
+          <li>
+            <span class="step-number">3</span>
+            <span class="step-illustration" aria-hidden="true">
+              <svg viewBox="0 0 120 92"><path class="illust-ground" d="M4 81c23-14 40-7 54 1 18 10 35 4 58-10v20H4Z"/><rect class="illust-paper" x="9" y="18" width="36" height="58" rx="9"/><rect class="illust-ink" x="17" y="27" width="20" height="30" rx="4"/><path class="illust-line illust-dash" d="M49 46h22"/><rect class="illust-ink" x="78" y="25" width="31" height="40" rx="12"/><circle class="illust-paper" cx="93.5" cy="45" r="11"/><path class="illust-accent" d="m91 39 8 6-8 6Z"/></svg>
+            </span>
+            <strong>ウォッチへ同期</strong><span>目的地の座標がウォッチへ送られます。</span>
+          </li>
+          <li>
+            <span class="step-number">4</span>
+            <span class="step-illustration" aria-hidden="true">
+              <svg viewBox="0 0 120 92"><path class="illust-ground" d="M5 80c18-8 33-11 50-1 22 13 42 8 61-6v19H5Z"/><rect class="illust-ink" x="48" y="3" width="24" height="86" rx="11"/><circle class="illust-paper" cx="60" cy="46" r="27"/><circle class="illust-ink" cx="60" cy="46" r="22"/><path class="illust-accent" d="m50 53 10-22 10 22-10-5Z"/><path class="illust-ray" d="M83 23l7-8m-2 15 11-3"/></svg>
+            </span>
+            <strong>方向・距離を確認</strong><span>ウォッチを見ながら目的地へ向かいます。</span>
+          </li>
+        </ol>
+
+        <div class="watch-showcase">
+          <figure>
+            <img src="assets/images/wear/navigation-navy.webp" width="329" height="329" loading="lazy" alt="濃紺の画面に目的地まで4.66kmと進行方向を表示したBuraNaviのウォッチ画面">
+          </figure>
+          <div>
+            <p class="section-label">On your wrist</p>
+            <h3>移動中に見るのは、方向と距離。</h3>
+            <p>スマートフォンで送った目的地を、シンプルなウォッチ画面で確認できます。</p>
+          </div>
+        </div>
+
+        <div class="screenshot-grid" aria-label="BuraNaviの操作画面">
+          <figure class="screenshot-card">
+            <div class="screenshot-frame"><img src="assets/images/mobile/app-map.webp" width="420" height="934" loading="lazy" alt="BuraNaviスマートフォン版に表示された4ステップの使い方案内"></div>
+            <figcaption><span>01</span>目的地を選んで「共有」をタップ</figcaption>
+          </figure>
+          <figure class="screenshot-card featured">
+            <div class="screenshot-frame"><img src="assets/images/mobile/share-sheet.webp" width="420" height="934" loading="lazy" alt="Google Mapsの共有メニューでBuraNaviを選択する画面"></div>
+            <figcaption><span>02</span>共有先からBuraNaviを選択</figcaption>
+          </figure>
+          <figure class="screenshot-card">
+            <div class="screenshot-frame"><img src="assets/images/mobile/sync-toast.webp" width="420" height="934" loading="lazy" alt="Google Maps上にウォッチへ同期しますと表示された画面"></div>
+            <figcaption><span>03</span>目的地をウォッチへ送信</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section download-section" id="download" aria-labelledby="download-title">
+      <img class="section-watch section-watch-dark" src="assets/images/watch-dark-decor.webp" width="647" height="650" loading="lazy" alt="" aria-hidden="true">
+      <div class="container">
+        <div class="section-heading section-heading-light">
+          <p class="section-label">Download</p>
+          <h2 id="download-title">スマホとウォッチ、両方にインストール</h2>
+          <p>スマホ版とWear OS版のAPKをそれぞれダウンロードして、両方の端末にインストールしてください。</p>
+        </div>
+        <div class="download-grid">
+          <article class="download-card">
+            <div class="platform-icon" aria-hidden="true">A</div>
+            <div>
+              <p class="platform-label">Android smartphone</p>
+              <h3>スマホ版 APK</h3>
+              <dl class="release-meta">
+                <div><dt>バージョン</dt><dd data-config-text="version">未設定</dd></div>
+                <div><dt>更新日</dt><dd data-config-text="updatedAt">未設定</dd></div>
+              </dl>
+            </div>
+            <a class="button button-download is-disabled" href="#download" aria-disabled="true" data-download="mobile">スマホ版をダウンロード</a>
+            <p class="filename">BuraNavi-mobile.apk</p>
+          </article>
+          <article class="download-card">
+            <div class="platform-icon platform-icon-watch" aria-hidden="true">W</div>
+            <div>
+              <p class="platform-label">Wear OS watch</p>
+              <h3>Wear OS版 APK</h3>
+              <dl class="release-meta">
+                <div><dt>バージョン</dt><dd data-config-text="version">未設定</dd></div>
+                <div><dt>更新日</dt><dd data-config-text="updatedAt">未設定</dd></div>
+              </dl>
+            </div>
+            <a class="button button-download is-disabled" href="#download" aria-disabled="true" data-download="wear">Wear OS版をダウンロード</a>
+            <p class="filename">BuraNavi-wear.apk</p>
+          </article>
+        </div>
+        <p class="apk-notice"><strong>ご注意：</strong>BuraNaviは現在、Google Playを経由せずAPKファイルで配布しています。インストール前に配布元とバージョンをご確認ください。</p>
+      </div>
+    </section>
+
+    <section class="section" id="install" aria-labelledby="install-title">
+      <div class="container narrow-container">
+        <div class="section-heading">
+          <p class="section-label">Installation</p>
+          <h2 id="install-title">インストール方法</h2>
+          <p>端末ごとに手順が異なります。該当する項目を開いて確認してください。</p>
+        </div>
+        <div class="accordion-list">
+          <details>
+            <summary><span class="summary-index">01</span><span>Androidスマートフォンへのインストール</span></summary>
+            <div class="details-content">
+              <ol>
+                <li>このページからスマホ版APKをダウンロードします。</li>
+                <li>端末に確認が表示された場合は、使用するブラウザに「不明なアプリのインストール」を許可します。</li>
+                <li>ダウンロードしたAPKを開き、画面の案内に従ってインストールします。</li>
+              </ol>
+              <p class="small-note">端末やAndroidのバージョンによって、設定名・画面が異なる場合があります。</p>
+            </div>
+          </details>
+          <details>
+            <summary><span class="summary-index">02</span><span>Wear OSウォッチへのインストール</span></summary>
+            <div class="details-content">
+              <ol>
+                <li>Wear OSウォッチで「開発者向けオプション」を有効にします。</li>
+                <li>「ADBデバッグ」と「ワイヤレスデバッグ」を有効にします。</li>
+                <li>このページからWear OS版APKをPCへダウンロードします。</li>
+                <li>ADBを使用してウォッチへ接続し、BuraNavi-wear.apkをインストールします。</li>
+              </ol>
+              <p class="small-note">設定名や接続方法はWear OSのバージョンや機種によって異なる場合があります。インストール後は、不要であればADBデバッグとワイヤレスデバッグを無効にしてください。</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tint" id="requirements" aria-labelledby="requirements-title">
+      <div class="container requirements-grid">
+        <div class="section-heading align-left">
+          <p class="section-label">Requirements</p>
+          <h2 id="requirements-title">対応環境・注意事項</h2>
+          <p>スマートフォンとWear OSウォッチの両方にBuraNaviをインストールして使用します。</p>
+        </div>
+        <ul class="check-list">
+          <li>Androidスマートフォンが必要です</li>
+          <li>Wear OSウォッチが必要です</li>
+          <li>Google Mapsを使用します</li>
+          <li>スマートフォンとウォッチの接続が必要です</li>
+          <li>Google Playを経由せずAPKファイルで配布しています</li>
+          <li>Android：<span data-config-text="androidRequirement">未設定</span></li>
+          <li>Wear OS：<span data-config-text="wearRequirement">未設定</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="faq" aria-labelledby="faq-title">
+      <img class="section-watch section-watch-blue" src="assets/images/watch-blue-decor.webp" width="633" height="650" loading="lazy" alt="" aria-hidden="true">
+      <div class="container narrow-container">
+        <div class="section-heading">
+          <p class="section-label">FAQ</p>
+          <h2 id="faq-title">よくある質問</h2>
+        </div>
+        <div class="accordion-list">
+          <details>
+            <summary>Google Playからインストールできますか？</summary>
+            <div class="details-content"><p>現時点ではGoogle Playでは配布していません。BuraNavi公式サイトからスマートフォン版・Wear OS版のAPKをダウンロードしてご利用ください。</p></div>
+          </details>
+          <details>
+            <summary>スマートフォンだけで使えますか？</summary>
+            <div class="details-content"><p>目的地の方向と距離を確認するには、BuraNaviをインストールしたWear OSウォッチが必要です。</p></div>
+          </details>
+          <details>
+            <summary>Wear OSならどの機種でも使えますか？</summary>
+            <div class="details-content"><p>Wear OS 3以降の端末を対象としています。ただし、すべての機種での動作を保証するものではありません。</p></div>
+          </details>
+          <details>
+            <summary>位置情報は外部へ送信されますか？</summary>
+            <div class="details-content"><p>BuraNaviは、ウォッチ上で現在地から目的地までの方向・距離を計算するために位置情報を使用します。また、Google Mapsから共有された目的地を取得する際、必要に応じてGoogleのGeocoding APIを利用します。詳細は下部のプライバシーポリシーをご確認ください。</p></div>
+          </details>
+          <details>
+            <summary>アプリはどのように更新しますか？</summary>
+            <div class="details-content">
+              <p>新しいバージョンが公開された場合は、この公式サイトから最新版のAPKをダウンロードし、現在のアプリに上書きインストールしてください。スマートフォン版・Wear OS版は、必要に応じて両方を最新版へ更新してください。</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section final-cta" aria-labelledby="final-title">
+      <div class="container final-cta-inner">
+        <img src="assets/images/app-icon.webp" width="160" height="160" loading="lazy" alt="ウォッチと歩行者を描いたBuraNaviアプリアイコン">
+        <div>
+          <p class="section-label">BuraNavi</p>
+          <h2 id="final-title">目的地への一歩を、もっと身軽に。</h2>
+          <p>スマートフォンで選んだ目的地を、ウォッチでシンプルに確認。</p>
+        </div>
+        <div class="final-cta-actions" aria-label="アプリのダウンロード">
+          <a class="button button-primary is-disabled"
+            href="#download"
+            aria-disabled="true"
+            data-download="mobile">
+            <span class="button-kicker">Androidスマートフォン</span>
+            スマホ版をダウンロード
+          </a>
+
+          <a class="button button-secondary is-disabled"
+            href="#download"
+            aria-disabled="true"
+            data-download="wear">
+            <span class="button-kicker">Wear OSウォッチ</span>
+            Wear OS版をダウンロード
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="#top"><img src="assets/icons/favicon.png" width="36" height="36" alt=""><span>BuraNavi</span></a>
+        <p>Version <span data-config-text="version">未設定</span> / Updated <span data-config-text="updatedAt">未設定</span></p>
+      </div>
+      <div class="footer-links" aria-label="フッターリンク">
+        <a href="#privacy">Privacy Policy</a>
+        <a href="#contact" aria-disabled="true" data-config-link-action="contactUrl">Contact（準備中）</a>
+        <a href="#release-notes" aria-disabled="true" data-config-link-action="releaseNotesUrl">Release Notes</a>
+        <a href="#github" aria-disabled="true" data-config-link-action="githubUrl">GitHub</a>
+      </div>
+    </div>
+    <div class="container footer-details">
+      <details id="privacy">
+        <summary>Privacy Policy</summary>
+
+        <div class="details-content privacy-policy">
+          <p><strong>最終更新日：2026年10月12日</strong></p>
+
+          <p>
+            BuraNavi（以下「本アプリ」）は、AndroidスマートフォンとWear OSウォッチを利用して、
+            目的地までの方向や距離を確認するためのアプリです。
+          </p>
+
+          <p>
+            本プライバシーポリシーでは、本アプリにおける情報の取り扱いについて説明します。
+          </p>
+
+          <h3>1. 位置情報の利用</h3>
+          <p>
+            本アプリのWear OS版では、現在地から目的地までの方向および距離を計算するため、
+            端末の位置情報を使用します。
+          </p>
+          <p>
+            取得した現在地は、ナビゲーション機能の提供に使用されます。
+          </p>
+          <p>
+            BuraNaviの開発者が運営する独自サーバーへ、
+            現在地を送信・保存する機能はありません。
+          </p>
+
+          <h3>2. 目的地情報の利用</h3>
+          <p>
+            Androidスマートフォン版では、Google Mapsなどから共有された目的地情報を受け取り、
+            Wear OSウォッチへ送信するために使用します。
+          </p>
+          <p>
+            目的地を座標へ変換する必要がある場合、
+            本アプリはGoogleが提供するGeocoding APIを利用することがあります。
+          </p>
+          <p>
+            この場合、目的地の解析に必要な情報がGoogleのサービスへ送信される場合があります。
+          </p>
+          <p>
+            Googleによる情報の取り扱いについては、
+            Googleのプライバシーポリシーおよび各サービスの利用規約をご確認ください。
+          </p>
+
+          <h3>3. スマートフォンとWear OSウォッチ間のデータ通信</h3>
+          <p>
+            本アプリでは、目的地の緯度・経度などの情報を、
+            GoogleのWear OS Data Layer APIを利用して、
+            接続されているスマートフォンとWear OSウォッチの間で送信します。
+          </p>
+          <p>
+            これらの情報をBuraNaviの開発者が運営する独自サーバーへ保存する機能はありません。
+          </p>
+
+          <h3>4. 歩数・心拍数などの情報</h3>
+          <p>
+            Wear OS版では、ユーザーが関連機能を有効にし、必要な権限を許可した場合、
+            歩数や心拍数などの情報を取得してウォッチ上に表示することがあります。
+          </p>
+          <p>
+            これらの情報は、本アプリの表示機能のために使用されます。
+          </p>
+          <p>
+            BuraNaviの開発者が運営する独自サーバーへ、
+            歩数や心拍数を送信・保存する機能はありません。
+          </p>
+
+          <h3>5. アプリ内に保存される情報</h3>
+          <p>
+            本アプリでは、アプリの設定や目的地情報など、
+            機能の提供に必要な情報を端末内に保存する場合があります。
+          </p>
+          <p>
+            これらは本アプリの動作に使用され、
+            BuraNaviの開発者が運営する独自サーバーへ自動的に送信されるものではありません。
+          </p>
+          <p>
+            アプリをアンインストールした場合、
+            端末内に保存された本アプリのデータは、
+            AndroidまたはWear OSの仕組みに従って削除されます。
+          </p>
+
+          <h3>6. 外部サービス</h3>
+          <p>
+            本アプリでは、機能提供のためにGoogleが提供するサービスを利用しています。
+          </p>
+
+          <ul>
+            <li>Google Mapsから共有された目的地情報</li>
+            <li>Google Geocoding API</li>
+            <li>Google Play services / Wear OS Data Layer API</li>
+            <li>AndroidおよびWear OSが提供する位置情報・ヘルス関連機能</li>
+          </ul>
+
+          <p>
+            これらの外部サービスに送信される情報については、
+            それぞれのサービス提供者のプライバシーポリシーが適用されます。
+          </p>
+
+          <h3>7. 個人情報の収集</h3>
+          <p>
+            本アプリには、ユーザー登録、ログイン、氏名、住所、メールアドレスなどを
+            BuraNaviの開発者へ送信する機能はありません。
+          </p>
+          <p>
+            また、BuraNaviの開発者が本アプリを通じて
+            広告目的のユーザープロファイルを作成する機能もありません。
+          </p>
+
+          <h3>8. 広告および第三者への販売</h3>
+          <p>
+            本アプリは、ユーザーの個人情報を広告事業者へ販売することはありません。
+          </p>
+          <p>
+            現在のBuraNaviには、広告配信を目的とした機能はありません。
+          </p>
+
+          <h3>9. 権限について</h3>
+          <p>
+            本アプリでは、機能に応じて位置情報、身体センサー、心拍数などへの
+            アクセス権限を求める場合があります。
+          </p>
+          <p>
+            これらの権限は、それぞれの機能を提供する目的で使用されます。
+          </p>
+          <p>
+            ユーザーはAndroidまたはWear OSの設定から、
+            許可した権限を変更または取り消すことができます。
+          </p>
+
+          <h3>10. プライバシーポリシーの変更</h3>
+          <p>
+            本アプリの機能追加、仕様変更、利用する外部サービスの変更などに伴い、
+            本プライバシーポリシーを変更する場合があります。
+          </p>
+          <p>
+            重要な変更がある場合は、
+            BuraNavi公式Webサイトなどでお知らせします。
+          </p>
+
+          <h3>11. お問い合わせ</h3>
+          <p>
+            本プライバシーポリシーまたはBuraNaviに関するお問い合わせは、
+            BuraNavi公式Webサイトに記載するお問い合わせ先よりご連絡ください。
+          </p>
+        </div>
+      </details>
+    </div>
+    <div class="container copyright">
+      <p>© <span data-current-year>2026</span> BuraNavi</p>
+      <p>Google MapsおよびWear OSはGoogle LLCの商標です。</p>
+    </div>
+  </footer>
+</body>
+</html>
