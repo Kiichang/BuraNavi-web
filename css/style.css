@@ -16,8 +16,13 @@
 
 * { box-sizing: border-box; }
 
+.zen-maru-gothic-black {
+  font-family: "Zen Maru Gothic", sans-serif !important;
+  font-weight: 900;
+  font-style: normal;
+}
+
 html {
-  /* scroll-behavior: smooth; */
   scroll-padding-top: 86px;
   max-width: 100%;
   overflow-x: hidden;
@@ -199,7 +204,7 @@ nav a:hover { color: var(--brand-dark); }
 .hero-copy {
   position: relative;
   z-index: 2;
-  width: min(560px, calc(100% - 80px));
+  width: min(620px, calc(100% - 80px));
   align-self: center;
   justify-self: start;
   margin-left: max(40px, calc((100% - var(--container)) / 2));
@@ -231,13 +236,14 @@ nav a:hover { color: var(--brand-dark); }
 .eyebrow span {
   color: var(--brand);
   font-size: 0.68rem;
+  line-height: 1;
 }
 
 h1 {
-  max-width: 560px;
-  margin: 18px 0 22px;
+  max-width: 620px;
+  margin: 10px 0 22px;
   font-family: "Arial Rounded MT Bold", "Hiragino Maru Gothic ProN", "Yu Gothic", sans-serif;
-  font-size: clamp(3.5rem, 4.6vw, 4.5rem);
+  font-size: clamp(3.5rem, 5.0vw, 5.0rem);
   font-weight: 900;
   letter-spacing: -0.05em;
   line-height: 1.13;
@@ -370,7 +376,7 @@ a[aria-disabled="true"] { cursor: not-allowed; }
 
 .section-heading {
   position: relative;
-  max-width: 730px;
+  max-width: 800px;
   margin: 0 auto 46px;
   text-align: center;
   z-index: 3;
@@ -643,6 +649,7 @@ a[aria-disabled="true"] { cursor: not-allowed; }
   color: var(--muted);
   font-size: 0.82rem;
   line-height: 1.6;
+  word-break: auto-phrase;
 }
 
 .watch-showcase {
@@ -679,10 +686,16 @@ a[aria-disabled="true"] { cursor: not-allowed; }
   line-height: 1.35;
 }
 
-.watch-showcase p:last-child {
+.watch-showcase .watch-showcase-text {
   margin: 0;
   color: var(--muted);
   word-break: auto-phrase;
+}
+.watch-showcase .watch-showcase-text-sup {
+  margin: .7em 0 0;
+  color: var(--muted);
+  word-break: auto-phrase;
+  font-size: .7em;
 }
 
 .screenshot-grid {

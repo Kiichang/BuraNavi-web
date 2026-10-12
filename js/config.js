@@ -11,10 +11,10 @@ window.BURANAVI_CONFIG = {
 
   mobileApkUrl: "https://github.com/Kiichang/BuraNavi/releases/download/v1.0.0/BuraNavi-mobile.apk",
   wearApkUrl: "https://github.com/Kiichang/BuraNavi/releases/download/v1.0.0/BuraNavi-wear.apk",
-  contactUrl: "",
+  contactUrl: "mailto:contact@buranavi.app",
   githubUrl: "https://github.com/Kiichang/BuraNavi",
   releaseNotesUrl: "https://github.com/Kiichang/BuraNavi/releases/latest",
 
-  canonicalUrl: "",
-  ogImageUrl: ""
+  canonicalUrl: "https://buranavi.app/",
+  ogImageUrl: "https://buranavi.app/assets/images/og-buranavi.png"
 };

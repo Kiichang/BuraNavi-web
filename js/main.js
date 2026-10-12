@@ -3,12 +3,13 @@
 
   var config = window.BURANAVI_CONFIG || {};
   var downloads = {
-    mobile: config.mobileApkUrl || "",
-    wear: config.wearApkUrl || ""
+    mobile: config.mobileApkUrl || "https://github.com/Kiichang/BuraNavi/releases/download/v1.0.0/BuraNavi-mobile.apk",
+    wear: config.wearApkUrl || "https://github.com/Kiichang/BuraNavi/releases/download/v1.0.0/BuraNavi-wear.apk"
   };
 
   function isUsableUrl(value) {
-    return typeof value === "string" && /^https:\/\//i.test(value.trim());
+    return typeof value === "string" &&
+      /^(https:\/\/|mailto:)/i.test(value.trim());
   }
 
   function setTextValues() {
