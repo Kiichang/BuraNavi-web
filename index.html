@@ -94,11 +94,21 @@
             <span><b aria-hidden="true">⌖</b> 距離を手首で確認</span>
           </div>
           <div class="hero-actions" aria-label="アプリのダウンロード">
-            <a class="button button-primary is-disabled" href="#download" aria-disabled="true" data-download="mobile">
+            <a
+              class="button button-mobile is-disabled"
+              href="#download"
+              aria-disabled="true"
+              data-download="mobile"
+            >
               <span class="button-kicker">Androidスマートフォン</span>
               スマホ版をダウンロード
             </a>
-            <a class="button button-secondary is-disabled" href="#download" aria-disabled="true" data-download="wear">
+            <a
+              class="button button-wear is-disabled"
+              href="#download"
+              aria-disabled="true"
+              data-download="wear"
+            >
               <span class="button-kicker">Wear OSウォッチ</span>
               Wear OS版をダウンロード
             </a>
@@ -153,8 +163,8 @@
           <img src="assets/images/walker-watch.webp" width="775" height="1200" loading="lazy" alt="PCヒーローと同じ服装で、手首のウォッチを確かめながら歩く女性のイラスト">
           <div>
             <p class="section-label">Take a little detour</p>
-            <h3>最短ルートにこだわらず、自分のペースで。</h3>
-            <p>スマホを何度も開かず、手首で方向を確かめながら、自分のペースで歩けます。</p>
+            <h3>最短ルートじゃもったいない！寄り道推奨アプリ。</h3>
+            <p>スマホを何度も開かず、手首で方向を確かめながら自分のペースで歩けます。</p>
           </div>
           <div class="callout-footprints" aria-hidden="true"><span>●</span><span>●</span><span>●</span></div>
         </aside>
@@ -166,7 +176,7 @@
       <div class="container">
         <div class="section-heading">
           <p class="section-label">How it works</p>
-          <h2 id="how-to-title">使い方は、4ステップ</h2>
+          <h2 id="how-to-title">使い方はかんたん</h2>
           <p>スマートフォンとWear OSウォッチの両方にBuraNaviをインストールしてから操作します。</p>
         </div>
 
@@ -213,6 +223,43 @@
           </div>
         </div>
 
+        <div class="distance-display-guide">
+          <div class="distance-display-copy">
+            <p class="section-label">Distance display</p>
+            <h3 id="distance-display-title">距離表示はタップで切り替え。</h3>
+            <p class="distance-display-text">
+              目的地までの距離が1kmを超えると、表示はkm単位になります。
+              距離表示をタップすると、小数点以下を1桁／2桁に切り替えられます。
+              1桁表示では、2桁目を四捨五入します。
+            </p>
+          </div>
+          <div
+            class="distance-display-examples"
+            aria-labelledby="distance-display-title"
+          >
+            <figure>
+              <img
+                src="assets/images/wear/km-display-01.webp"
+                width="329"
+                height="329"
+                loading="lazy"
+                alt="目的地までの距離を小数点以下1桁の4.5kmで表示したBuraNaviのウォッチ画面"
+              >
+              <figcaption>1桁表示（4.5km）</figcaption>
+            </figure>
+            <figure>
+              <img
+                src="assets/images/wear/km-display-02.webp"
+                width="329"
+                height="329"
+                loading="lazy"
+                alt="目的地までの距離を小数点以下2桁の4.46kmで表示したBuraNaviのウォッチ画面"
+              >
+              <figcaption>2桁表示（4.46km）</figcaption>
+            </figure>
+          </div>
+        </div>
+
         <div class="screenshot-grid" aria-label="BuraNaviの操作画面">
           <figure class="screenshot-card">
             <div class="screenshot-frame"><img src="assets/images/mobile/app-map.webp" width="420" height="934" loading="lazy" alt="BuraNaviスマートフォン版に表示された4ステップの使い方案内"></div>
@@ -249,7 +296,7 @@
                 <div><dt>更新日</dt><dd data-config-text="updatedAt">未設定</dd></div>
               </dl>
             </div>
-            <a class="button button-download is-disabled" href="#download" aria-disabled="true" data-download="mobile">スマホ版をダウンロード</a>
+            <a class="button button-download button-mobile is-disabled" href="#download" aria-disabled="true" data-download="mobile">スマホ版をダウンロード</a>
             <p class="filename">BuraNavi-mobile.apk</p>
           </article>
           <article class="download-card">
@@ -262,7 +309,7 @@
                 <div><dt>更新日</dt><dd data-config-text="updatedAt">未設定</dd></div>
               </dl>
             </div>
-            <a class="button button-download is-disabled" href="#download" aria-disabled="true" data-download="wear">Wear OS版をダウンロード</a>
+            <a class="button button-download button-wear is-disabled" href="#download" aria-disabled="true" data-download="wear">Wear OS版をダウンロード</a>
             <p class="filename">BuraNavi-wear.apk</p>
           </article>
         </div>
@@ -345,6 +392,34 @@
             <div class="details-content"><p>Wear OS 3以降の端末を対象としています。ただし、すべての機種での動作を保証するものではありません。</p></div>
           </details>
           <details>
+            <summary>ウォッチアプリの設定画面はどこから開けますか？</summary>
+            <div class="details-content">
+              <p>BuraNaviのナビ画面をタップすると、画面右側に歯車アイコンが表示されます。歯車アイコンをタップすると、各種デザインや到着通知、アンビエントモードなどを変更できる設定画面が開きます。</p>
+            </div>
+          </details>
+          <details>
+            <summary>「到着通知」とは何ですか？</summary>
+            <div class="details-content">
+              <p>
+                目的地までの距離が設定した範囲内になると、ウォッチが振動して到着が近いことをお知らせします。通知してほしい距離に合わせて設定してください。
+              </p>
+              <p>
+                初期設定では100m・ONです。GPSの精度や位置情報の鮮度が十分でない場合は、誤通知を防ぐため判定を行いません。また、ナビ開始時点ですでに通知距離以内にいる場合は、その場では通知しません。
+              </p>
+            </div>
+          </details>
+          <details>
+            <summary>「アンビエントモード」とは何ですか？</summary>
+            <div class="details-content">
+              <p>
+                ウォッチの常時表示時に、BuraNaviを省電力向けのシンプルな画面で表示する機能です。アンビエント表示中は黒背景になり、矢印や距離などを白を基調とした簡易表示で確認できます。
+              </p>
+              <p>
+                初期設定ではONです。OFFにすると通常画面を常時表示します。
+              </p>
+            </div>
+          </details>
+          <details>
             <summary>位置情報は外部へ送信されますか？</summary>
             <div class="details-content"><p>BuraNaviは、ウォッチ上で現在地から目的地までの方向・距離を計算するために位置情報を使用します。また、Google Mapsから共有された目的地を取得する際、必要に応じてGoogleのGeocoding APIを利用します。詳細は下部のプライバシーポリシーをご確認ください。</p></div>
           </details>
@@ -367,7 +442,7 @@
           <p>スマートフォンで選んだ目的地を、ウォッチでシンプルに確認。</p>
         </div>
         <div class="final-cta-actions" aria-label="アプリのダウンロード">
-          <a class="button button-primary is-disabled"
+          <a class="button button-mobile is-disabled"
             href="#download"
             aria-disabled="true"
             data-download="mobile">
@@ -375,7 +450,7 @@
             スマホ版をダウンロード
           </a>
 
-          <a class="button button-secondary is-disabled"
+          <a class="button button-wear is-disabled"
             href="#download"
             aria-disabled="true"
             data-download="wear">
